@@ -2,9 +2,7 @@
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 .title a {
@@ -88,4 +86,113 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.dateDiv {
+  padding: 20px 0px;
+  font-size: 1.5em;
+}
+
+
+.sliderInfoContainer {
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.sliderContainer {
+  width: 100%;
+  padding: 20px 60px;
+}
+
+.slider {
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.hoursDiv {
+  font-size: 1.5em;
+}
+
+
+.warningTypesContainer {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  width: 100%;
+  height: 30%;
+  min-height: 30%;
+  margin: 0px;
+}
+
+.warningType {
+  text-align: center;
+  font-size: 2em;
+  padding: 10px 5px;
+  font-weight: bold;
+}
+
+.warningType:nth-child(1) {
+  background-color: lightgray;
+}
+
+.warningType:nth-child(2) {
+  background-color: yellow;
+}
+
+.warningType:nth-child(3) {
+  background-color: orange;
+}
+
+.warningType:nth-child(4) {
+  background-color: red;
+}
+
+.graphContainer {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+}
+
+.graphBarColumn {
+  height: 100%;
+  width: 100%;
+}
+
+.graphBarStack {
+  height: 100%;
+  width: 100%;
+}
+
+.graphBarStack:nth-child(odd) {
+  background-color: lightpink;
+}
+
+.graphBarStack:nth-child(even) {
+  background-color: lightcyan;
+}
+
+
+.graphBarHour {
+  text-align: center;
+}
+
+.graphBar {
+  height: auto;
+}
+
+.graphBar:nth-child(1) {
+  background-color: lightgray;
+}
+
+.graphBar:nth-child(2) {
+  background-color: yellow;
+}
+
+.graphBar:nth-child(3) {
+  background-color: orange;
+}
+
+.graphBar:nth-child(4) {
+  background-color: red;
 }
