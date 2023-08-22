@@ -101,7 +101,7 @@
 
 .sliderContainer {
   width: 100%;
-  padding: 20px 60px;
+  padding: 5px 60px 0px 60px;
 }
 
 .slider {
@@ -115,43 +115,62 @@
 
 
 .warningTypesContainer {
-  display: flex;
-  border-radius: 20px;
+
+  /* border-radius: 20px; */
   overflow: hidden;
   /* text-overflow: ellipsis; */
   width: 100%;
-  height: 30%;
-  min-height: 30%;
+
+  /* min-height: 20%; */
   margin: 0px;
 }
 
-.warningType {
+.warningCategoriesContainer {
+  display: flex;
+  min-height: 50%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.warningTypeHeading {
+  margin: 10px 0px;
+}
+
+.warningCategory {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.25em;
   padding: 10px 5px;
   font-weight: bold;
+  min-height: 100px;
+  max-height: 100px;
 }
 
-.warningType:nth-child(1) {
+.warningCategory:nth-child(1) {
   background-color: lightgray;
+  color: black;
 }
 
-.warningType:nth-child(2) {
+.warningCategory:nth-child(2) {
   background-color: yellow;
+  color: black;
 }
 
-.warningType:nth-child(3) {
+.warningCategory:nth-child(3) {
   background-color: orange;
+  color: black;
 }
 
-.warningType:nth-child(4) {
+.warningCategory:nth-child(4) {
   background-color: red;
+
 }
 
 .graphContainer {
   width: 100%;
   padding: 0px;
   display: flex;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .graphBarColumn {
@@ -162,6 +181,11 @@
 .graphBarStack {
   height: 100%;
   width: 100%;
+}
+
+.graphBarStackCurrent {
+  border: 5px solid #0070f3;
+  overflow: hidden;
 }
 
 .graphBarStack:nth-child(odd) {
@@ -175,24 +199,42 @@
 
 .graphBarHour {
   text-align: center;
+  width: 100%;
 }
 
-.graphBar {
+.graphBar,
+.graphBarCurrent {
   height: auto;
 }
 
 .graphBar:nth-child(1) {
-  background-color: lightgray;
+  background-color: gray;
 }
 
 .graphBar:nth-child(2) {
-  background-color: yellow;
+  background-color: #e0e000;
 }
 
 .graphBar:nth-child(3) {
-  background-color: orange;
+  background-color: #e07000;
 }
 
 .graphBar:nth-child(4) {
+  background-color: #e00000;
+}
+
+.graphBarCurrent:nth-child(1) {
+  background-color: lightgray;
+}
+
+.graphBarCurrent:nth-child(2) {
+  background-color: yellow;
+}
+
+.graphBarCurrent:nth-child(3) {
+  background-color: orange;
+}
+
+.graphBarCurrent:nth-child(4) {
   background-color: red;
 }
